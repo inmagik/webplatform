@@ -1,0 +1,28 @@
+{% extends "ui/dashboard.html" %}
+
+
+{% block dashboard_content %}
+<div class="container-fluid">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4>Minisito: {{object.name}}</h4>
+    </div>
+    <div class="panel-body">
+    {{ object }}
+
+    <div class="">
+      <a type="button" class="btn btn-primary" href="{% url "minisite-public" object.pk %}">
+        Sito pubblico
+      </a>
+      <a type="button" class="btn btn-danger" href="{% url "minisite-update-modules" object.pk %}">
+        Modifica sito
+      </a>
+    </div>
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+{% endblock %}

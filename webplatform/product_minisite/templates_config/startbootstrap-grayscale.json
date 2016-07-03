@@ -1,0 +1,11 @@
+{
+  "name" : "merlin-master",
+  "modules" : ["header", "services", "work", "clients", "about", "contact"],
+  "modules_config" : {
+      "header" : { "schema" : "merlin.header.json"},
+      "about" : { "schema" : "startboostrap.about.json" },
+      "contact" : { }
+  },
+
+  "styles" : { "schema" : "startboostrap.styles.json" }
+}

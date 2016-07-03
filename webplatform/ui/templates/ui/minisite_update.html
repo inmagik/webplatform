@@ -1,0 +1,26 @@
+{% extends "ui/dashboard.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block dashboard_content %}
+<div class="container-fluid">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4>Site configuration</h4>
+    </div>
+    <div class="panel-body">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="{% url "minisite-update-modules" object.pk %}">Modules</a></li>
+        <li role="presentation"><a href="{% url "minisite-update-content" object.pk %}">Content</a></li>
+        <li role="presentation"><a href="{% url "minisite-update-style" object.pk %}">Styles</a></li>
+      </ul>
+
+    {% crispy form form.helper %}
+    </div>
+  </div>
+
+  </div>
+
+
+</div>
+{% endblock %}

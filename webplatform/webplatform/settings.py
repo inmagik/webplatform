@@ -40,12 +40,22 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'debug_toolbar',
+
     #libs
     'authtools',
+    'crispy_forms',
+    'jsoneditor',
 
     #our apps
     'core',
     'customers',
+    'business',
+    'product_minisite',
+    'product_businessapp',
+
+    'ui',
+
 
 ]
 
@@ -86,8 +96,10 @@ WSGI_APPLICATION = 'webplatform.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'webplatform',
+        'USER': 'inmagik',
+        'PASSWORD': 'inmagik',
     }
 }
 
@@ -131,3 +143,6 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'authtools.User'
+LOGIN_URL = '/login/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

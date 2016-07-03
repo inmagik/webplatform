@@ -1,0 +1,41 @@
+{
+  "type": "object",
+   "properties": {
+     "services_heading": {
+         "type" : "string",
+         "default" : "What we love doing.",
+         "propertyOrder": 1
+     },
+     "services_message": {
+         "type" : "string",
+         "default" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.",
+         "propertyOrder": 2
+     },
+     "services": {
+       "type": "array",
+       "propertyOrder": 3,
+       "items": {
+         "type": "object",
+         "properties": {
+           "icon": {
+             "type": "string"
+           },
+           "title": {
+             "type": "string"
+           },
+           "description": {
+             "type": "string"
+           }
+         },
+         "required": [
+           "icon",
+           "title",
+           "description"
+         ]
+       }
+     }
+   },
+   "required": [
+
+   ]
+}

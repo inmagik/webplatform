@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+   "type" : "object",
+   "properties": {
+     "top_image": {
+       "type": "string"
+     },
+     "background_color": {
+       "type": "string",
+       "format": "color",
+       "default" : "#444444",
+       "title": "background color"
+     },
+     "background_color_alt": {
+       "type": "string",
+       "format": "color",
+       "default" : "#444444",
+       "title": "alternative background color"
+     },
+     "text_color": {
+       "type": "string",
+       "format": "color",
+       "title": "text color",
+       "default": "#ffffff"
+     },
+     "text_color_alt": {
+       "type": "string",
+       "format": "color",
+       "title": "alternative text color",
+       "default": "#ffffff"
+     },
+     "accent_color": {
+       "type": "string",
+       "format": "color",
+       "default" : "#71be3c",
+       "title": "accent color"
+     },
+     "font_family" : {
+         "type" : "string",
+         "default" : "Lora,'Helvetica Neue',Helvetica,Arial,sans-serif",
+         "enum" : [
+            "Lora,'Helvetica Neue',Helvetica,Arial,sans-serif",
+             "Arial, Helvetica, sans-serif",
+             "'Source Sans Pro', sans-serif",
+             "Impact, Charcoal, sans-serif",
+             "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
+             "Tahoma, Geneva, sans-serif",
+             "'Courier New', Courier, monospace",
+             "'Lucida Console', Monaco, monospace"
+         ]
+     }
+   },
+   "required": [
+     "top_image", "font_family", "background_color", "background_color_alt",
+      "text_color", "text_color_alt", "accent_color"
+   ]
+}

@@ -1,0 +1,14 @@
+{
+  "name" : "merlin-master",
+  "modules" : ["header", "services", "work", "clients", "about", "contact"],
+  "modules_config" : {
+      "header" : { "schema" : "merlin.header.json"},
+      "services" : { "schema" : "merlin.services.json"},
+      "work" : { },
+      "clients" : { },
+      "about" : { },
+      "contact" : { }
+  },
+
+  "styles" : { "schema" : "merlin.styles.json" }
+}

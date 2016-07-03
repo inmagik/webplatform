@@ -1,0 +1,18 @@
+{
+  "type" : "object",
+  "name" : "merlin header",
+  "properties" : {
+    "heading": {
+        "type" : "string",
+        "default" : "What we love doing.",
+        "propertyOrder": 1
+    },
+    "message": {
+        "type" : "string",
+        "default" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.",
+        "format" : "html",
+        "propertyOrder": 2
+    }
+  },
+  "required" : ["heading", "message"]
+}
