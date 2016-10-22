@@ -1,6 +1,7 @@
 THEME_DATA_SCHEMA =  """
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title" : "THEME CONFIG",
   "type": "object",
   "properties": {
     "theme_name": {

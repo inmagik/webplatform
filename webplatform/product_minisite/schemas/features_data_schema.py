@@ -1,6 +1,7 @@
 FEATURES_DATA_SCHEMA =  """
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title" : "SITE FEATURES",
   "type": "object",
   "properties": {
     "services_heading": {

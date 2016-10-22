@@ -1,6 +1,6 @@
 {
   "type" : "object",
-  "name" : "merlin header",
+  "title" : "merlin header",
   "properties" : {
     "heading": {
         "type" : "string",

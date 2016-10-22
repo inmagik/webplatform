@@ -1,8 +1,8 @@
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from django import forms
-from django.contrib.auth.forms import (AuthenticationForm, SetPasswordForm,
-                                       PasswordChangeForm, PasswordResetForm)
+from authtools.forms import AuthenticationForm
+#from django.contrib.auth.forms import (AuthenticationForm, ) (SetPasswordForm, PasswordChangeForm, PasswordResetForm)
 from product_minisite.models import MiniSite
 
 class LoginForm(AuthenticationForm):
