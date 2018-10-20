@@ -11,6 +11,7 @@ def make_modules_json_schema(cfg):
     modules = cfg.get("modules", [])
     out  = {
         "type" : "array",
+        "title" : "Modules",
         "items" : { "type" : "string", "enum" : modules},
         "uniqueItems": True
     }
