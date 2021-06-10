@@ -1,4 +1,4 @@
-Django==1.10.2
+Django==2.2.24
 -e git://github.com/fusionbox/django-authtools.git#egg=authtools
 django-crispy-forms==1.6.1
 django-debug-toolbar==1.6
